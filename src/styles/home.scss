@@ -1,0 +1,145 @@
+.home-container {
+  width: 100vw;
+  height: 100%;
+
+  .hero-section {
+    background-image: url('../assets/images/HomeImage.jpg');
+    @include hero-mix();
+
+    .learn-btn {
+      width: 200px;
+      @include base-btn();
+    }
+  }
+
+  .services-container {
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      padding: 50px;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cards-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 350px;
+        background-color: $cardcolor;
+        display: flex;
+        box-shadow: 0 4px 12px rgba(black, .2);
+
+        .card-top {
+          font-size: 42px;
+          color: $primarycolor;
+          font-weight: $bold;
+        }
+
+        .card-middle {
+          font-size: 24px;
+        }
+
+        .card-bottom {
+          flex-flow: wrap;
+          font-size: 28px;
+          color: $secondarycolor;
+        }
+      }
+    }
+  }
+
+  .technologies-container {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      padding: 50px;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .tech-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 84%;
+      height: 300px;
+      background-color: $cardcolor;
+      box-shadow: 0 4px 12px rgba(black, .2);
+
+      .tech-item {
+        height: 165px;
+        width: 165px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+
+
+        &:nth-child(1) {
+          background-image: url('../assets/techicons/Javascript.png');
+        }
+
+        &:nth-child(2) {
+          background-image: url('../assets/techicons/React.png');
+        }
+
+        &:nth-child(3) {
+          background-image: url('../assets/techicons/MicrosoftWindows.png');
+        }
+
+        &:nth-child(4) {
+          background-image: url('../assets/techicons/Nodejs.png');
+        }
+
+        &:nth-child(5) {
+          background-image: url('../assets/techicons/Python.png');
+
+        }
+      }
+    }
+  }
+
+  .socials-container {
+    height: 100px;
+    width: 30vw;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 28px;
+
+    .socials-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 65px;
+      height: 60px;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(black, .2);
+      background-color: $cardcolor;
+
+      a {
+        color: $primarycolor;
+        font-size: 34px;
+
+        &:hover {
+          flex-grow: 10px;
+        }
+      }
+    }
+
+  }
+}

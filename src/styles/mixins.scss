@@ -1,0 +1,64 @@
+@mixin hero-mix() {
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  span {
+    color: $primarycolor;
+  }
+
+  .spacer {
+    height: 150px;
+  }
+}
+
+@mixin base-btn() {
+  background-color: $primarycolor;
+  height: 68px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 12px rgba(black, .1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .react-icon {
+    border-radius: 100%;
+    font-size: 1em;
+    animation: ripple 0.6s linear infinite;
+  }
+
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(white, 0.1),
+      0 0 0 20px rgba(white, 0.1),
+      0 0 0 40px rgba(white, 0.1),
+      0 0 0 60px rgba(white, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(white, 0.1),
+      0 0 0 40px rgba(white, 0.1),
+      0 0 0 60px rgba(white, 0.1),
+      0 0 0 80px rgba(white, 0);
+  }
+}

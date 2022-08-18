@@ -1,0 +1,7 @@
+.contact-container {
+  .hero-section {
+    background-image: url('../assets/images/ContactImage.jpg');
+    @include hero-mix();
+    background-position: center;
+  }
+}
