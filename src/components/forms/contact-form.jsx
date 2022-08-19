@@ -3,7 +3,7 @@ import React from 'react'
 function ContactForm() {
   return (
     <div className="form-container">
-      <form method="post" onSubmit="mailto:trentondenton91@gmail.com">
+      <form method="POST" data-netlify="true">
         <div className="form-card">
           <div className="form-group">
             <label for="name">Name</label>

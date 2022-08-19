@@ -1,12 +1,10 @@
 import React from 'react';
 import { BsLinkedin, BsInstagram, BsCaretRight } from "react-icons/bs";
 
-import Trenton from '../assets/images/trenton.jpg'
-import Navbar from '../components/navigation/navbar';
+import Trenton from '../assets/images/trenton.jpg';
 function About() {
   return (
     <div className='about-container'>
-      <Navbar />
       <div className="hero-section">
         <h1 className='hero-a'>Meet the <span className="hero-g">Tech's</span>!</h1>
         <h1 className="hero-b">Big tech from local Kansas developers.</h1>

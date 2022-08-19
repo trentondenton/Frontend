@@ -10,28 +10,32 @@
 
   .squares-container {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 50px;
 
     .dev-squares {
       width: 80%;
-      height: 1000px;
+      height: 100%;
       display: grid;
       grid-gap: 75px;
+      justify-content: center;
+      align-items: center;
       grid-template-columns: 1fr 1fr;
 
       .dev-square {
         display: flex;
-        max-width: 500px;
+        max-width: 450px;
         justify-content: center;
         align-items: center;
         background-color: $cardcolor;
+        padding: 40px;
         box-shadow: 0 4px 12px rgba(black, .2);
 
         img {
-          max-height: 500px;
+          max-height: 400px;
           max-width: 400px;
           object-fit: cover;
         }
@@ -39,6 +43,7 @@
 
       .dev-square-text {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         max-width: 500px;
         justify-content: flex-start;
@@ -80,6 +85,84 @@
     .contact-btn {
       width: 60%;
       @include base-btn();
+    }
+  }
+}
+
+// Mid Screens
+@media (max-width: 1300px) {
+  .about-container {
+    .squares-container {
+      .dev-squares {
+        width: 90%;
+        grid-gap: 20px;
+
+        .dev-square {
+          img {
+            max-width: 400px;
+            max-height: 400px;
+          }
+        }
+
+        .dev-square-text {
+          word-break: keep-all;
+
+          h1 {
+            font-size: 38px;
+          }
+
+          p {
+            font-size: 22px;
+          }
+
+          .dev-facts {
+            font-size: 14px;
+
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small Screens
+@media (max-width: 900px) {
+  .about-container {
+    .squares-container {
+      .dev-squares {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .dev-square {
+          img {
+            padding: 20px;
+          }
+        }
+
+        .dev-square-text {
+          h1 {
+            font-size: 38px;
+          }
+
+          .dev-facts {
+            font-size: 1rem;
+
+            span {
+              font-size: 1rem;
+            }
+          }
+
+          &:nth-child(2) {
+            order: 4;
+          }
+
+
+        }
+      }
     }
   }
 }

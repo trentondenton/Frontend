@@ -1,12 +1,17 @@
 import React from 'react';
-import { BsFillArrowRightCircleFill, BsCodeSlash, BsCloud, BsFileRichtext, BsFacebook, BsLinkedin, BsInstagram } from "react-icons/bs";
-
-import NavBar from '../components/navigation/navbar';
+import {
+  BsFillArrowRightCircleFill,
+  BsCodeSlash,
+  BsCloud,
+  BsFileRichtext,
+  BsFacebook,
+  BsLinkedin,
+  BsInstagram
+} from "react-icons/bs";
 
 export default function Home() {
   return (
     <div className="home-container">
-      <NavBar />
       <div className="hero-section">
         <h1 className='hero-a'>Welcome to <span className="hero-g">T.Tech</span>!</h1>
         <h1 className="hero-b">IT, Software, Design, and Tech Services</h1>
@@ -36,7 +41,7 @@ export default function Home() {
               <h2>Web Design</h2>
             </div>
             <div className="card-bottom">
-              <p>UI/UX packages, landing pages, logo, web apps, and more!</p>
+              <p>UI/UX packages, landing pages, logo, web pages, and more!</p>
             </div>
           </div>
 
@@ -48,7 +53,7 @@ export default function Home() {
               <h2>Software Dev</h2>
             </div>
             <div className="card-bottom">
-              <p>Custom web apps, mobile apps, desktop apps, using modern tech!</p>
+              <p>Build custom web, mobile, and desktop apps with latest tech!</p>
             </div>
           </div>
         </div>

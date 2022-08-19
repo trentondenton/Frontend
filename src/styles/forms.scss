@@ -4,12 +4,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 900px;
+    height: 950px;
     width: 100vw;
 
     .form-card {
+      padding: 10px;
       width: 60vw;
-      height: 600px;
+      max-width: 800px;
+      height: 75vh;
       background-color: $cardcolor;
       border-radius: 5px;
       box-shadow: 0 4px 12px rgba(black, .2);
@@ -24,44 +26,49 @@
         flex-direction: column;
         text-align: start;
         width: 80%;
+        padding-bottom: 10px;
+
+        label {
+          padding: 0 10px 10px 0;
+        }
 
         input {
           border: none;
-          border-bottom: 2px solid black;
+          border-bottom: 3px solid $secondarycolor;
           height: 30px;
           width: 100%;
           font-size: 18px;
 
           &:focus-visible {
             outline: none;
-            border-bottom: 2px solid $primarycolor;
+            border-bottom: 3px solid $primarycolor;
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
           }
         }
 
         textarea {
           border: none;
-          border-bottom: 2px solid black;
+          border-bottom: 3px solid $secondarycolor;
           width: 100%;
           font-size: 18px;
 
           &:focus-visible {
+            label {
+              color: $primarycolor;
+            }
+
             outline: none;
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-            border-bottom: 2px solid $primarycolor;
+            border-bottom: 3px solid $primarycolor;
           }
         }
       }
 
       .submit-btn {
         @include base-btn();
-        height: 50px;
+        height: 40px;
         width: 80%;
       }
     }
-
-
-
-
   }
 }

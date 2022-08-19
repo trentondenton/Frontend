@@ -24,23 +24,38 @@
     font-weight: $bold;
     list-style: none;
 
-    .nav-link {
-      color: $secondarycolor;
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      padding: 0 1rem;
-      height: 100%;
-      cursor: pointer;
-      transition: 0.2s ease-in-out;
+    .nav-links {
+      a {
+        color: $secondarycolor;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
 
-      &.active {
-        border-bottom: 3px solid $primarycolor;
-      }
-
-      &:hover {
-        color: $primarycolor;
+        &:hover {
+          color: $primarycolor;
+        }
       }
     }
+
+    .nav-link-active {
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+        cursor: pointer;
+        color: $primarycolor;
+        text-decoration: none;
+        font-weight: $bold;
+      }
+
+    }
+
+
   }
 }
