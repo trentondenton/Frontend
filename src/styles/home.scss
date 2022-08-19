@@ -74,16 +74,16 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      width: 84%;
+      width: 90%;
       height: 300px;
       background-color: $cardcolor;
       box-shadow: 0 4px 12px rgba(black, .2);
 
       .tech-item {
-        height: 165px;
+        height: 160px;
         width: 165px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         align-items: flex-end;
 
@@ -119,25 +119,22 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 28px;
+    font-size: 34px;
 
     .socials-card {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 65px;
-      height: 60px;
+      text-align: center;
+      width: 56px;
+      height: 54px;
       border-radius: 5px;
       box-shadow: 0 4px 12px rgba(black, .2);
       background-color: $cardcolor;
 
       a {
         color: $primarycolor;
-        font-size: 34px;
-
-        &:hover {
-          flex-grow: 10px;
-        }
+        font-size: 30px;
       }
     }
 
