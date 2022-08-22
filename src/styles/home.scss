@@ -207,10 +207,12 @@
 
     .technologies-container {
       .tech-card {
-        height: 150px;
+        height: 120px;
+        justify-content: space-evenly;
+        align-items: center;
 
         .tech-item {
-          height: 100px;
+          height: 60px;
           width: 18%
         }
       }

@@ -4,4 +4,47 @@
     @include hero-mix();
     background-position: center;
   }
+
+  .socials-container {
+    height: 100px;
+    width: 35vw;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 28px;
+
+    .socials-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 10px;
+      width: 56px;
+      height: 52px;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(black, .2);
+      background-color: $cardcolor;
+
+      a {
+        padding: 10px;
+        color: $primarycolor;
+        font-size: 30px;
+      }
+    }
+
+  }
+
+  // Med/Small Screens
+  @media (max-width: 1200px) {
+    .socials-container {
+      justify-content: space-evenly;
+      width: 100vw;
+      font-size: 24px;
+
+      .socials-card {
+        font-size: 24px;
+      }
+    }
+  }
 }

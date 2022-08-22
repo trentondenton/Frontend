@@ -1,5 +1,12 @@
 import React from 'react';
-import { BsPinMapFill, BsTelephone, BsClock } from "react-icons/bs";
+import {
+  BsPinMapFill,
+  BsTelephone,
+  BsClock,
+  BsFacebook,
+  BsLinkedin,
+  BsInstagram
+} from "react-icons/bs";
 
 import ContactForm from '../components/forms/contact-form';
 
@@ -14,6 +21,18 @@ function contact() {
         </div>
       </div>
       <ContactForm />
+      <div className="socials-container">
+        <p>Follow Us!</p>
+        <div className="socials-card">
+          <a href="https://linked.in"><BsLinkedin /></a>
+        </div>
+        <div className="socials-card">
+          <a href="https://facebook.com"><BsFacebook /></a>
+        </div>
+        <div className="socials-card">
+          <a href="https://instagram.com"><BsInstagram /></a>
+        </div>
+      </div>
     </div>
   )
 }
